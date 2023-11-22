@@ -1,0 +1,55 @@
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel = "icon" href ="{% static "image/drop.jpg" %}"
+        type = "image/x-icon">
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #dc3545;">
+      <a href="/" class="navbar-brand"><i class="fas fa-heart"></i>&nbsp; Blood Donation System</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="/"><i class="fas fa-home"></i>&nbsp; Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="/patient/patientlogin"><i class="fas fa-procedures"></i>&nbsp; Patient</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="/donor/donorlogin"><i class="fas fa-user"></i>&nbsp; Donor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="/adminlogin"><i class="fas fa-user-shield"></i>&nbsp; Admin</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</body>
+
+</html>

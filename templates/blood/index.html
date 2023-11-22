@@ -1,0 +1,112 @@
+{% load static %}
+<head>
+
+    <title>Blood Donation</title>
+     <link rel = "icon" href ="{% static "image/drop.jpg" %}"
+        type = "image/x-icon">
+</head>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+body{
+            background-image:  url('{% static "image/homepage.jpg" %}');
+            background-size: 100% 100%; /* Set background size to cover the entire element */
+            background-attachment: fixed;
+            margin: 0; /* Remove default margin for body */
+
+}
+.background-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:auto;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: white;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ .footer {
+            width: 100%;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+}
+
+</style>
+    <div class="background-container">
+        <div class="overlay">
+            <br>  <br>  <br>  <br> <br>  <br>  <br><br>  <br>  <br> <br>
+            <div class="typewriter">
+            <h1 style="font-size: 55px"><strong>Once a blood donor, always a lifesaver.</strong></h1>
+             </div>
+                <br>  <br>  <br> <br>  <br>
+
+
+             <p>Welcome to the Blood Donation System, where every drop of blood can make a life-saving difference. Our mission is to ensure a steady and safe blood supply for those in need. Through voluntary blood donations, we strive to improve and save lives, one donation at a time. Join us in this noble cause, become a donor, and help us create a healthier and happier community. Together, we can make a significant impact on the lives of countless individuals in need of life-saving blood transfusions.Your help can save lives. Donate blood and make a difference.</p>
+
+            <p><strong>Help us save lives by donating blood. Every drop counts.</strong></p>
+
+<br>
+        </div>
+         </div>
+
+
+    {% include "blood/navbar.html" %}
+    <br>
+
+
+    <div class="footer">
+        Blood Bank Management System &copy; 2023
+    </div>
+
